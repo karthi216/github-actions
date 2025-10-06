@@ -8,16 +8,7 @@ on:
 jobs:
   say-hello:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v4
-
       - name: Print Hello World
-        run: echo "Hello World 👋"
+        run: echo "Hello World"
 
-      - name: Print Commit Message
-        run: echo "Commit message: ${{ github.event.head_commit.message }}"
-
-      - name: Print Pushed By
-        run: echo "Pushed by: ${{ github.actor }}"
